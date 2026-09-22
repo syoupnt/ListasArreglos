@@ -13,3 +13,16 @@ for nota in notas:
 promedio = suma / len(notas)
 print(f'Promedio: {promedio:2}')
 
+# Calculando nota más alta y más baja
+nota_alta = notas[0]
+nota_baja = notas[0]
+
+for i in range(1, len(notas)):
+    nota = notas[i]
+    if nota > nota_alta:
+        nota_alta = nota
+    if nota < nota_baja:
+        nota_baja = nota
+
+print(f'Nota más alta: {nota_alta}')
+print(f'Nota más baja: {nota_baja}')
